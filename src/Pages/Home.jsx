@@ -81,8 +81,9 @@ export default function Home() {
               linkto: "/login",
               active: false,
             }}
-            codeBlock={`<!DOCTYPE html>\n <html lang='en'>\n<head>\n<title>This is myPage</title>\n</head>\n<body>\n<h1><a href='/'>Header</a></h1>\n<nav> <a href='/one'>One</a>\n</nav>\n</body>`}
             codecolor={"text-yellow-25"}
+            codeBlock={`<!DOCTYPE html>\n <html lang='en'>\n<head>\n<title>This is myPage</title>\n</head>\n<body>\n<h1><a href='/'>Header</a></h1>\n<nav> <a href='/one'>One</a>\n</nav>\n</body>`}
+            backgroundGradient={<div className="codeblock4 absolute"></div>}
           />
         </div>
 
@@ -111,8 +112,9 @@ export default function Home() {
               linkto: "/login",
               active: false,
             }}
-            codeBlock={`import React from 'react';\n import CTAButton from './Button';\nimport TypeAnimation from 'react-type';\nimport { FaArrowRight } from 'react-icons/fa';\nconst Home = () => {\nreturn (\n<div>Home</div>\n)\n}\nexport default Home;`}
             codecolor={"text-richblue-100"}
+            codeBlock={`import React from 'react';\n import CTAButton from './Button';\nimport TypeAnimation from 'react-type';\nimport { FaArrowRight } from 'react-icons/fa';\nconst Home = () => {\nreturn (\n<div>Home</div>\n)\n}\nexport default Home;`}
+            backgroundGradient={<div className="codeblock3 absolute"></div>}
           />
         </div>
 
