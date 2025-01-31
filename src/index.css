@@ -45,3 +45,16 @@ body {
   filter: blur(34px);
   transform: matrix(1, 0, -0.03, 1, 0, 0);
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #444444;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 14px;
+}

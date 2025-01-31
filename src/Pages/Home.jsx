@@ -8,6 +8,7 @@ import TimelineSection from "../components/core/HomePage/TimelineSection";
 import LearningLanguageSection from "../components/core/HomePage/LearningLanguageSection";
 import Instructor from "../assets/Images/Instructor.png";
 import ExploreMore from "../components/core/HomePage/ExploreMore";
+import Footer from "../components/common/Footer";
 
 export default function Home() {
   return (
@@ -123,7 +124,7 @@ export default function Home() {
       </div>
 
       {/* section 2 */}
-      <div className="bg-pure-greys-5  text-richblue-700 ">
+      <div className="bg-pure-greys-5 mt-28 text-richblue-700 ">
         <div className="homepage_bg w-full h-[250px] bg-cover bg-center bg-no-repeat">
           <div className="w-11/12 max-w-maxContent flex flex-col justify-center items-center gap-8 mx-auto">
             <div className="h-[100px]"></div>
@@ -141,8 +142,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" w-11/12 container  mx-auto max-w-maxContent mt-20">
-          <div className="flex gap-6 mb-10 justify-between mx-auto">
+        <div className=" w-11/12 container mx-auto max-w-maxContent mt-20 ">
+          <div className="flex gap-6 mb-10 justify-between mx-auto ">
             <div className="w-[55%] text-4xl font-bold">
               Get the Skills You need for a{" "}
               <HighlightText text={"Job that is in demand."} />
@@ -175,7 +176,7 @@ export default function Home() {
             <img
               src={Instructor}
               alt="instructor"
-              className="w-[600px]  h-fit shadow-[-20px_-20px_rgba(255,255,255)]"
+              className="lg:w-[600px] h-fit shadow-[-20px_-20px_rgba(255,255,255)]"
             />
           </div>
           <div className="flex gap-3 flex-col justify-center">
@@ -203,6 +204,7 @@ export default function Home() {
         Review from Other Learners
       </h1>
       {/* Footer */}
+      <Footer />
     </div>
   );
 }
