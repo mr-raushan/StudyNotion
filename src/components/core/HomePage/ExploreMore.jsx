@@ -27,11 +27,11 @@ export default function ExploreMore() {
 
   return (
     <div className="mb-10 ">
-      <div className="text-4xl font-semibold text-center">
+      <div className="text-4xl mt-4 font-semibold text-center">
         Unlock the
         <HighlightText text={" Power of Code"} />
       </div>
-      <p className="text-center text-richblack-200 mt-3 mb-3">
+      <p className="text-center text-richblack-200 mt-3 mb-5">
         Learn to build, anything You can Imagine
       </p>
 

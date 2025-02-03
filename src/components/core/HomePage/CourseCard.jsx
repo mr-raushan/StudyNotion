@@ -22,7 +22,7 @@ export default function CourseCard({ CardData, currentCard, setCurrentCard }) {
           {CardData?.heading}
         </div>
 
-        <div className="text-richblue-400">{CardData?.description}</div>
+        <div className="text-richblack-400">{CardData?.description}</div>
       </div>
 
       <div

@@ -12,14 +12,14 @@ export default function LearningLanguageSection() {
           Your swiss knife for
           <HighlightText text={" Learning any Language"} />
         </p>
-        <p className="text-base text-center w-[50%] mx-auto">
+        <p className="text-base text-center w-[100%] md:w-[50%] md:text-[16px] mx-auto">
           Using spin making learning multiple language easy. with 20+ languages
           realastic voice over, process tracking, custom schedule and more
         </p>
 
         {/* image section  */}
-        <div className="flex mt-10  items-center justify-center">
-          <div className="flex">
+        <div className="flex flex-col gap-2 md:flex-row lg:flex-row mt-1 ">
+          <div className="flex flex-col md:flex-row lg:flex-row text-center">
             <img
               src={knowYourProgress}
               alt="planyourlesson"
@@ -34,7 +34,7 @@ export default function LearningLanguageSection() {
             <img
               src={planYourLesson}
               alt="comparewithothers"
-              className="object-contain -ml-48"
+              className="object-contain md:-ml-48"
             />
           </div>
         </div>

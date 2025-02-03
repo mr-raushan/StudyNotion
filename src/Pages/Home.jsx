@@ -31,7 +31,7 @@ export default function Home() {
           Empower Your Future with
           <HighlightText text={" Coding Skills"} />
         </div>
-        <p className="w-[65%] text-center mx-auto text-lg text-richblack-200 mt-4 leading-[20px]">
+        <p className="w-[95%] md:w-[65%] text-center mx-auto text-lg text-richblack-200 mt-4 leading-7">
           With our online coding courses, you can learn at your own pace, from
           anywhere in the world, and get access to a wealth of resources,
           including hands-on-projects, quizzes, and personalized feedback from
@@ -56,7 +56,7 @@ export default function Home() {
           </video>
         </div>
         {/* code section 1 */}
-        <div>
+        <div className="flex flex-col md:flex-row lg:flex-row">
           <CodeBlocks
             position={`lg:flex flex-row`}
             heading={
@@ -143,13 +143,13 @@ export default function Home() {
         </div>
 
         <div className=" w-11/12 container mx-auto max-w-maxContent mt-20 ">
-          <div className="flex gap-6 mb-10 justify-between mx-auto ">
-            <div className="w-[55%] text-4xl font-bold">
+          <div className="flex flex-col md:flex-row gap-6 mb-10 justify-between mx-auto ">
+            <div className="w-[100%] md:w-[55%] text-4xl font-bold">
               Get the Skills You need for a{" "}
               <HighlightText text={"Job that is in demand."} />
             </div>
 
-            <div className="w-[45%]">
+            <div className="w-[100%] md:w-[45%]">
               <p className="text-[16px] font-semibold">
                 The modern StudyNotion is the dedicates its own terms. Today, to
                 be a competetive specialist requires more than professional
@@ -170,13 +170,13 @@ export default function Home() {
         </div>
       </div>
       {/* section 3 */}
-      <div className="w-11/12 container  text-white mb-40 mt-20 mx-auto max-w-maxContent flex items-center justify-center gap-10">
-        <div className="flex gap-32">
-          <div className="w-[60%]">
+      <div className="w-11/12 container text-white mb-20 md:mb-40 mt-20 md:mt-40 mx-auto max-w-maxContent flex items-center justify-center gap-10">
+        <div className="flex flex-col md:flex-row gap-32">
+          <div className="w-[100%] flex md:[450px]">
             <img
               src={Instructor}
               alt="instructor"
-              className="lg:w-[600px] h-fit shadow-[-20px_-20px_rgba(255,255,255)]"
+              className=" h-fit shadow-[-20px_-20px_rgba(255,255,255)]"
             />
           </div>
           <div className="flex gap-3 flex-col justify-center">

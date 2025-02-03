@@ -33,9 +33,9 @@ const timeline = [
 
 export default function TimelineSection() {
   return (
-    <div>
-      <div className="flex gap-5 mt-10 items-center ">
-        <div className="w-[45%] flex flex-col gap-4">
+    <div className="flex flex-col md:flex-row lg:flex-row">
+      <div className="flex flex-col md:flex-row md:w-11/12 max-w-maxContent lg:flex-row gap-20 mt-10 items-center ">
+        <div className="w-[100%] md:w-[45%] lg:w-[50%] gap-4">
           {timeline.map((item) => {
             return (
               <div key={item.id} className="flex flex-row gap-10">
@@ -43,7 +43,7 @@ export default function TimelineSection() {
                   <img src={item.logo} />
                 </div>
 
-                <div className="flex flex-col ">
+                <div className="flex flex-col md:flex-col lg:flex-col py-5 ">
                   <h2 className="text-[18px] font-semibold">{item.heading}</h2>
                   <p className="text-base">{item.Description}</p>
                 </div>
@@ -59,15 +59,15 @@ export default function TimelineSection() {
             className="rounded-md shadow-blue-200 shadow-[5px_-5px_20px_-5px] object-cover h-[400px]"
           />
 
-          <div className=" left-[50%]  translate-y-[-50%] rounded-lg bg-caribbeangreen-600 py-10 w-[80%] h-[70px] text-lg  uppercase flex items-center gap-20 mx-auto">
-            <div className="flex items-center gap-10 pl-10">
+          <div className=" left-[50%]  translate-y-[-50%] rounded-lg bg-caribbeangreen-600 py-10 w-[50%] h-[50px] md:w-[80%] lg:w-[80%] pl-10 text-lg  uppercase flex items-center gap-20 mx-auto">
+            <div className="pl-0 flex items-center gap-2 md:flex-row md:gap-10 lg:gap-10">
               <p className="font-bold text-white text-3xl">10</p>
               <div className="flex flex-col gap-4 text-caribbeangreen-50 text-sm">
                 years experience
               </div>
             </div>
-            <div className="border h-10 border-caribbeangreen-50 "></div>
-            <div className="flex justify-between gap-10 items-center mr-10">
+            <div className="hidden md:block border h-16 border-caribbeangreen-50 "></div>
+            <div className=" hidden md:flex flex-col justify-between  lg:flex">
               <p className=" font-bold text-white text-3xl">250</p>
               <div className=" text-caribbeangreen-50 text-sm">
                 <p>Types of</p>
